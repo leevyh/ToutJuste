@@ -183,3 +183,83 @@ input:checked + .slider:before {
   justify-content: flex-end;
   margin-bottom: 2rem;
 }
+
+@media (max-width: 768px) {
+  .headerRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .headerActions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .vacationToggle {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .vacationLabel {
+    font-size: 0.8rem;
+  }
+
+  .pageTitle {
+    font-size: 1.75rem;
+  }
+
+  .form {
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+
+  .section {
+    padding: 1.25rem;
+  }
+
+  .section h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .inputGroup {
+    margin-bottom: 1rem;
+  }
+
+  .input, .textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 0.65rem 0.75rem;
+  }
+
+  .uploadBox {
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .toggleGroup {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .toggle {
+    width: 18px;
+    height: 18px;
+  }
+
+  .formActions {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .formActions > * {
+    width: 100%;
+  }
+}

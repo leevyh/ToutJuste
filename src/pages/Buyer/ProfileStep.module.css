@@ -159,8 +159,40 @@
 }
 
 @media (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .budgetRow {
+    flex-wrap: wrap;
+  }
+
+  .budgetRow .input {
+    min-width: 0;
+    flex: 1 1 100px;
+  }
+
+  .pills {
+    gap: 0.5rem;
+  }
+
+  .pill {
+    flex: 1 1 calc(50% - 0.5rem);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.92rem;
+  }
+
   .row {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .segmentedControl {
+    flex-direction: column;
+  }
+
+  .segmentBtn {
+    width: 100%;
   }
 }

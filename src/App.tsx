@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <main className="container" style={{ flex: 1, padding: '2rem 1.5rem' }}>
+      <main className="container appMain">
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/quiz" element={<Quiz />} />

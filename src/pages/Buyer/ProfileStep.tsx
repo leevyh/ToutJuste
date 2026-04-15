@@ -87,6 +87,7 @@ export default function ProfileStep({ answers, onChange }: ProfileStepProps) {
           ].map(opt => (
             <button
               key={opt.label}
+              type="button"
               className={`${styles.pill} ${answers.cible?.tags[0] === opt.tags[0] ? styles.activePill : ''}`}
               onClick={() => onChange('cible', opt.tags)}
             >
@@ -119,6 +120,7 @@ export default function ProfileStep({ answers, onChange }: ProfileStepProps) {
             ].map(opt => (
               <button
                 key={opt.label}
+                type="button"
                 className={`${styles.segmentBtn} ${answers.genre?.tags[0] === opt.tags[0] ? styles.activeSegment : ''}`}
                 onClick={() => onChange('genre', opt.tags)}
               >

@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={`container ${styles.container}`}>
+      <div className={styles.container}>
         <div className={styles.brand}>
           <img src="/logo-min.png" alt="Tout Juste Min Logo" className={styles.logoMin} />
           <p className={styles.tagline}>ToutJuste.</p>

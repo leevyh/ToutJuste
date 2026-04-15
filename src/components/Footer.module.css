@@ -3,6 +3,7 @@
   color: var(--color-surface);
   padding: 2rem 0 0.75rem;
   margin-top: auto;
+  width: 100%;
 }
 
 .container {
@@ -10,8 +11,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.5rem;
-  padding-bottom: 1.25rem;
+  padding: 0 1.5rem 1.25rem 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .brand {
@@ -62,4 +65,22 @@
   padding-top: 0.75rem;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .links > div {
+    flex: 1;
+  }
 }

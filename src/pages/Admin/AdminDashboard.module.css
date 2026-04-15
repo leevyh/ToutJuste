@@ -109,7 +109,53 @@
 }
 
 @media (max-width: 768px) {
+  .pageTitle {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .metricsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .metricCard {
+    padding: 1rem;
+  }
+
+  .metricValue {
+    font-size: 1.5rem;
+  }
+
   .sectionsGrid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .section {
+    padding: 1.25rem;
+  }
+
+  .section h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .listItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .btnApprove, .btnReject {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.4rem;
   }
 }

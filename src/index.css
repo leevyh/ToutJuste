@@ -51,8 +51,8 @@
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1126px;
   margin: 0 auto;
   text-align: center;
   border-inline: 1px solid var(--border);
@@ -80,6 +80,21 @@ h1 {
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    border-inline: none;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin: 16px 0;
+  }
+
+  h2 {
+    font-size: 18px;
   }
 }
 h2 {

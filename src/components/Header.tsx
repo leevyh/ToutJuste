@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={`container ${styles.container}`}>
+      <div className={styles.container}>
         <Link to="/" className={styles.logoLink}>
           <img src="/logo.png" alt="Tout Juste Logo" className={styles.logo} />
         </Link>

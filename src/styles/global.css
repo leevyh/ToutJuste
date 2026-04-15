@@ -20,6 +20,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 #root {
@@ -56,4 +57,19 @@ ul, ol {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+.appMain {
+  flex: 1;
+  padding-block: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .appMain {
+    padding-block: 1.25rem;
+  }
 }

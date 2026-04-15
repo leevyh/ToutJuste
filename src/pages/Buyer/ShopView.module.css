@@ -126,6 +126,13 @@
   font-weight: 700;
 }
 
+@media (max-width: 900px) {
+  .productsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 600px) {
   .shopHeader {
     flex-direction: column;
@@ -141,6 +148,38 @@
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+  }
+
+  .sectionTitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .productsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .productImage {
+    height: 140px;
+  }
+
+  .productInfo {
+    padding: 0.8rem;
+  }
+
+  .productName {
+    font-size: 0.95rem;
+  }
+
+  .productPrice {
+    font-size: 1rem;
+  }
+
+  .productCard {
+    border-radius: var(--radius-sm);
   }
 }
 
